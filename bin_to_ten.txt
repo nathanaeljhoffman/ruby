@@ -1,0 +1,10 @@
+def bin_to_ten(input)
+	input_string = input.to_s
+	output = 0
+	iter = 0
+	while iter < input_string.length
+		output += 2**(input_string.length - iter - 1) if input_string[iter] == "1"
+		iter += 1
+	end
+	output
+end
